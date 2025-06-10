@@ -30,14 +30,14 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
 
-}
-.options{
-    display: grid;
 
 }
+
+
 .title{
     font-weight: 600;
 }
+
 
 
 .header{
@@ -69,7 +69,7 @@ body{
 .images{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    padding-top: 120px;
 }
 
 .card, .announcements, .trending {
@@ -79,8 +79,10 @@ body{
     border-radius: 5px;
     box-shadow: 2px 2px rgb(106, 151, 173);
 }
+
 .card2 {
     border-bottom: 1px solid rgb(106, 151, 173);
+    padding: 10px 0px;
 }
 .content {
     grid-column: 2/6;
@@ -103,3 +105,30 @@ body{
     grid-column: 5 / 6;
 }
 
+.sideheader{
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu > li, .settings > li{
+    height: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu, .settings{
+    padding-top: 50px;
+}
+.trending > .card3{
+    display: grid;
+    grid-template-columns: 1fr 10fr ;
+    padding: 10px;
+}
